@@ -17,20 +17,20 @@ jobs:
       matrix:
         include:
           - target: x86_64-unknown-linux-gnu
-            asset_name: openapi_cli_linux
+            asset_name: gis_random_groups_cli_linux
             os: ubuntu-latest
-            mv: mv target/release/gis_random_groups target/release/openapi_cli_linux
-            up: target/release/openapi_cli_linux
+            mv: mv target/release/gis_random_groups target/release/gis_random_groups_cli_linux
+            up: target/release/gis_random_groups_cli_linux
           - target: x86_64-apple-darwin
-            asset_name: openapi_cli_macos
+            asset_name: gis_random_groups_cli_macos
             os: macos-latest
-            mv: mv target/release/gis_random_groups target/release/openapi_cli_macos
-            up: target/release/openapi_cli_macos
+            mv: mv target/release/gis_random_groups target/release/gis_random_groups_cli_macos
+            up: target/release/gis_random_groups_cli_macos
           - target: x86_64-pc-windows-gnu
-            asset_name: openapi_cli_windows.exe
+            asset_name: gis_random_groups_cli_windows.exe
             os: windows-latest
-            mv: mv target\release\gis_random_groups.exe target\release\openapi_cli_windows.exe
-            up: target\release\openapi_cli_windows.exe
+            mv: mv target\release\gis_random_groups.exe target\release\gis_random_groups_cli_windows.exe
+            up: target\release\gis_random_groups_cli_windows.exe
 
     steps:
       - uses: actions/checkout@v3
