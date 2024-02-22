@@ -1,5 +1,3 @@
-extern crate colored;
-extern crate structopt;
 use std::process;
 
 use colored::*;
