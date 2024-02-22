@@ -1,28 +1,24 @@
 # PROJECT NAME
 Random Group Generator
 
-    The Random group generator is an application developed in Rust that allows you to efficiently generate random groups for various purposes. Whether you are a teacher organizing students, a project manager assigning team members, this application simplifies the process.
+    The Random group generator is a CLI application developed in Rust that allows you to efficiently generate random groups for various purposes. Whether you are a teacher organizing students, a project manager assigning team members, this application simplifies the process.
 
-    With the Random group generator you can add students or individuals to the application and then generate randomized groups based on your desired group size.
+    This CLI tool generates groups using a csv file which have to be added while running the application and equally specifying the number of groups.
 
 
 # CONTENT
 
     - Description
-    - Features
+    - Feature (s)
     - Installation
     - Usage
     - Contributing
     - License
 
 
-# FEATURES
-    
-    - Add, Update and Remove students from the application.
+# FEATURE (S)
 
-    - Generate random groups of students.
-
-    - Assign students to  specific groups.
+    - Assign students to specific groups.
 
 
 # INSTALLATION
@@ -42,14 +38,17 @@ Random Group Generator
 
 # USAGE
 
-    - Adding a new student to the application:
-        ```cargo run add-student <student-name>```
+    - Assign students to groups:
+        To assign students to a group you will need to load a csv file while precising the number of groups as seen below:
 
-    - Assigning random groups:
-        ```cargo run generate-groups```
+            ```cargo run -- -f <path-to-csv-file> -n <number-of-groups>```
 
-    - Assign student to a specific group:
-        ```cargo run assign-group <student-name> <group-number>```
+# Breakdown of command.
+
+    - cargo run: This is the command to build and run your Rust project using Cargo.
+    - '--' : It is used to specify the arguments that will be passed to the Rust Program.
+    - -f: This is an argument passed to your Rust program. It specifies the path to the CSV file you want to process. 
+    - n: It specifies the number of groups you want to generate. 
 
 
 # Contributing
